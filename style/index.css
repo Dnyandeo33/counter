@@ -1,14 +1,39 @@
-*,
-*::before,
-*::after {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: blueviolet;
 }
 
-body {
-  width: 100%;
-  height: 100%;
-  background-color: #565454;
+.counter {
+  font-size: 11rem;
+  font-weight: bolder;
+  color: aliceblue;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+button {
+  font-size: larger;
+  padding: 15px;
+  width: 5rem;
+  border: none;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: cornflowerblue;
 }
